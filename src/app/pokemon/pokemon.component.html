@@ -1,7 +1,7 @@
 <main>
     <div class="container-sm d-flex justify-content-center">
     <h4 class="d-flex align-items-center" style="margin: 5px; font-size: 15px">Name:</h4>
-    <input [(ngModel)]="name" class="form-control" type="text" style="width: 50%;">
+    <input [(ngModel)]="name" class="form-control" type="text" style="width: 50%;" [placeholder]="placeholder">
 </div>
 
 <div class="d-flex justify-content-center">    
@@ -13,7 +13,17 @@
         <img src="{{urlImage}}" class="card-img-top" alt="Foto Pokemon">
         <div class="card-body" style="background-color: #f8f9fa;">
           <p class="card-text">
-            <b>Programador:</b> Persona que tiene relaciones más duraderas y profundas con una computadora que con otra persona”.
+            <b>{{namePokemon}}</b>
+            <br>
+            <b>{{typesPokemon}}</b>
+            <br>
+            <b>{{experience}}</b>
+            <br>
+            <b>{{weight}}</b>
+            <br>
+            <b>{{base_stat}}</b>
+            <br>
+            <b>{{effort}}</b>
           </p>
         </div>
       </div>
